@@ -1,0 +1,13 @@
+.socialmediabar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c4dfff;
+  padding: 20px 0;
+}
+
+.socialmediabar img {
+  width: 30px;
+  height: auto;
+  padding: 15px;
+}
