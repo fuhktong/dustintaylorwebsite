@@ -35,7 +35,8 @@ const Profile = () => {
               "On the Framers’ Electoral College: How the Hamilton Method and an
               Electors Convention Can Defeat Populism and Tyranny."
             </a>{" "}
-            He is currently writing on the General Caucus.
+            He is currently writing on the General Caucus, a system modeled
+            after the Iowa Caucus.
           </p>
         </div>
         <div className="profile-img">
