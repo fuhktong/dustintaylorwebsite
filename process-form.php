@@ -34,7 +34,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 $to = 'dustint505@gmail.com';
-$subject = 'Message from DustinTaylor.website';
+$subject = "Message from DustinTaylor.website";
 $headers = "From: $email\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
