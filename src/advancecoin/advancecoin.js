@@ -4,10 +4,12 @@ import "./advancecoin.css";
 const AdvanceCoin = () => {
   return (
     <section>
-      <div className="section" style={{ backgroundColor: "#C4DFFF" }}>
-        <div className="section-text">
-          <h2 className="section-text-h2">Website - Advance Coin Laundry</h2>
-          <p className="section-text-p">
+      <div className="advancecoin" style={{ backgroundColor: "#C4DFFF" }}>
+        <div className="advancecoin-text">
+          <h2 className="advancecoin-text-h2">
+            Website - Advance Coin Laundry
+          </h2>
+          <p className="advancecoin-text-p">
             Established in 2021, Advance Coin Laundry offers coin-operated
             washers and dryers, wash & fold services, and dry cleaning services
             in Orlando, FL. Completely renovated and air-conditioned, Advance
@@ -17,7 +19,7 @@ const AdvanceCoin = () => {
             Tuesdays and Thursdays. Please note that last wash is at 8:55 PM
             daily. Check out our website for complete details.
           </p>
-          <p className="section-text-p">
+          <p className="advancecoin-text-p">
             Built a dynamic business website utilizing React 18 with TypeScript
             integration, featuring interactive components like a custom image
             carousel, Google Maps integration, and animated page transitions.
@@ -26,7 +28,7 @@ const AdvanceCoin = () => {
             including the Google Maps JavaScript API and Google Business API for
             real-time reviews.{" "}
           </p>
-          <p className="section-text-p">
+          <p className="advancecoin-text-p">
             Architected a scalable backend infrastructure combining Express.js
             and PHP, implementing secure API proxy services for Google Maps
             integration, and maintaining environment security through proper
@@ -36,18 +38,29 @@ const AdvanceCoin = () => {
             management.
           </p>
         </div>
-        <div className="section-img">
-          <a
-            href="https://www.advancecoinlaundry.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="section-img-img"
-              src="./advancecoinlaundry.png"
-              alt="Advance Coin Laundry"
-            />
-          </a>
+        <div className="advancecoin-img">
+          <div>
+            <a
+              href="https://www.advancecoinlaundry.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="advancecoin-img-img"
+                src="./advancecoinlaundry.png"
+                alt="Advance Coin Laundry"
+              />
+            </a>
+          </div>
+          <div className="advancecoin-github">
+            <a
+              href="https://github.com/fuhktong/customquizzes"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>Advance Coin Laundry - GitHub</p>
+            </a>
+          </div>
         </div>
       </div>
     </section>

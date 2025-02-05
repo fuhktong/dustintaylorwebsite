@@ -1,4 +1,4 @@
-.section {
+.framersmethod {
   display: flex;
   gap: 100px;
   height: 600px;
@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-.section-text {
+.framersmethod-text {
   text-align: left;
   width: 60%;
   display: flex;
@@ -17,14 +17,14 @@
   margin-left: 5%;
 }
 
-.section-text-h1 {
+.framersmethod-text-h1 {
   font-size: 55px;
   text-shadow: 1px 1px #fff;
   text-align: left;
   margin: 0;
 }
 
-.section-text-h2 {
+.framersmethod-text-h2 {
   font-size: 25px;
   text-shadow: 1px 1px #fff;
   text-align: left;
@@ -32,51 +32,62 @@
   padding: 5px;
 }
 
-.section-text-p {
+.framersmethod-text-p {
   font-size: 15px;
   text-align: left;
   margin: 0;
   padding-top: 10px;
 }
 
-.section-img {
+.framersmethod-img {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 400px;
   height: 400px;
   margin-right: 5%;
 }
 
-.section-img-img {
+.framersmethod-img-img {
   max-width: 100%;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #707070);
 }
 
+.framersmethod-github a {
+  color: black;
+  text-decoration: none;
+}
+
+.framersmethod-github a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
-  .section {
+  .framersmethod {
     flex-direction: column-reverse;
     height: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .section-text {
+  .framersmethod-text {
     margin-left: 0;
     padding-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .section-text-h1,
-  .section-text-h2,
-  .section-text-p {
+  .framersmethod-text-h1,
+  .framersmethod-text-h2,
+  .framersmethod-text-p {
     text-align: center;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .section-img {
+  .framersmethod-img {
     margin-right: 0;
     height: auto;
     padding-top: 50px;
