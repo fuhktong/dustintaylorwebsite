@@ -14,18 +14,12 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: Deploy to server via SFTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
         server: ${{ secrets.FTP_HOST }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        protocol: sftp
         port: 22
-        local-dir: ./
-        server-dir: ${{ secrets.FTP_PATH }}
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          .github/
-          README.md
+        local_path: './*'
+        remote_path: ${{ secrets.FTP_PATH }}
+        sftp_only: true
