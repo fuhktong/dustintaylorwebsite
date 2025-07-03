@@ -1,0 +1,31 @@
+.socialmediabar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c4dfff;
+  padding: 20px 0;
+}
+
+.socialmediabar a {
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.socialmediabar a:hover {
+  transform: scale(1.1);
+}
+
+.socialmediabar img {
+  width: 30px;
+  height: auto;
+  padding: 15px;
+  border-radius: 10px;
+  /* Add a simple background that doesn't cover the icon */
+  background-color: rgba(0, 0, 0, 0.15);
+  /* Simple hover effect */
+  transition: background-color 0.3s ease;
+}
+
+.socialmediabar img:hover {
+  background-color: rgba(0, 87, 169, 0.3); /* Darker blue, semi-transparent */
+}

@@ -1,0 +1,141 @@
+.contact {
+  background-color: #c4dfff;
+  margin: 0;
+  min-height: 500px; /* Changed from fixed height to min-height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px; /* Add padding instead of fixed height */
+}
+
+form {
+  display: inline-block;
+  padding: 2em;
+  border: 4px solid #a1cbfe;
+  border-radius: 1em;
+  background-color: #c4dfff;
+  width: 90%; /* Increased from 80% */
+  max-width: 1000px; /* Increased from 400px */
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #707070);
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Ensure full width */
+}
+
+form li {
+  width: 100%; /* Ensure list items take full width */
+}
+
+form li + li {
+  margin-top: 1.5em; /* Increased spacing */
+}
+
+label {
+  display: block; /* Changed from flex to block */
+  width: 100%;
+  text-align: left; /* Changed from right to left */
+  padding-bottom: 8px; /* Increased padding */
+  color: black;
+  font-size: 15px;
+  text-shadow: 1px 1px 1px rgb(172, 172, 172);
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+  padding: 8px; /* Added padding */
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+  outline: 2px solid #0057a9; /* Added focus outline */
+}
+
+textarea {
+  vertical-align: top;
+  height: 8em; /* Increased from 5em */
+  resize: vertical; /* Allow only vertical resizing */
+  max-height: 20em; /* Set maximum height */
+  overflow-y: auto; /* Add scrolling if content exceeds max height */
+}
+
+.button {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+button {
+  margin-left: 0;
+  border: none;
+  background-color: white;
+  width: 100px; /* Increased from 80px */
+  height: 40px; /* Increased from 30px */
+  font-size: 15px;
+  border-radius: 5px; /* Added border radius */
+  cursor: pointer; /* Added pointer cursor */
+  transition: background-color 0.3s; /* Added transition effect */
+}
+
+button:hover {
+  background-color: #f0f0f0; /* Added hover effect */
+}
+
+.contactform-send-message {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px; /* Increased from 24px */
+  font-weight: 550;
+  text-shadow: 1px 1px 1px rgb(172, 172, 172);
+  margin-bottom: 20px; /* Added margin */
+}
+
+.success {
+  color: black;
+  font-weight: bold;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.error {
+  color: black;
+  font-weight: bold;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* Added responsive adjustments */
+@media screen and (max-width: 768px) {
+  form {
+    padding: 1.5em;
+    width: 95%;
+  }
+
+  .contactform-send-message {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  form {
+    max-width: 1000px; /* Larger form on bigger screens */
+  }
+
+  button {
+    width: 120px;
+    height: 45px;
+    font-size: 15px;
+  }
+}

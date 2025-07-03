@@ -1,0 +1,103 @@
+.profile {
+  display: flex;
+  gap: 30px;
+  height: 600px;
+  background-color: white;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-text {
+  text-align: left;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.profile-text-h1 {
+  font-size: 55px;
+  text-shadow: 1px 1px #fff;
+  text-align: left;
+  margin: 0;
+}
+
+.profile-text-h2 {
+  font-size: 25px;
+  text-shadow: 1px 1px #fff;
+  text-align: left;
+  margin: 0;
+  padding: 5px;
+}
+
+.profile-text-p {
+  font-size: 15px;
+  text-align: left;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.profile-img {
+  display: flex;
+  width: 300px; /* Fixed width */
+  height: 300px; /* Equal to width for perfect circle */
+  align-items: center;
+  justify-content: center;
+  margin-right: 5%;
+}
+
+.profile-img-img {
+  width: 300px; /* Fixed width */
+  height: 300px; /* Equal to width for perfect circle */
+  object-fit: cover; /* This maintains the aspect ratio by cropping if needed */
+  border-radius: 50%; /* This creates a perfect circle */
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #707070);
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-text {
+    margin-left: 0;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-text-h1,
+  .profile-text-h2,
+  .profile-text-p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-img {
+    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    width: 250px; /* Smaller fixed width for mobile */
+    height: 250px; /* Equal to width */
+  }
+
+  .profile-img-img {
+    width: 250px; /* Must match container */
+    height: 250px; /* Must match container */
+    border-radius: 50%;
+  }
+
+  .profile-text-h1 {
+    margin-top: 5px;
+  }
+}
