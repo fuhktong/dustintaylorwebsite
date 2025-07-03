@@ -13,12 +13,14 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - name: Deploy to server via FTP
+    - name: Deploy to server via SFTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_HOST }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
+        protocol: sftp
+        port: 22
         local-dir: ./
         server-dir: ${{ secrets.FTP_PATH }}
         exclude: |
