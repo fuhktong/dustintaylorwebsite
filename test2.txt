@@ -1,0 +1,1 @@
+# Test deployment with fixed FTP path
