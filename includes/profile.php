@@ -3,7 +3,7 @@
     <div class="profile-text">
       <h1 class="profile-text-h1">Dustin Taylor</h1>
       <h2 class="profile-text-h2">
-        Web Developer / Political Scientist / Navy Veteran / Comedy Cellar Server
+        Web Developer / Political Scientist / Navy Veteran
       </h2>
       <p class="profile-text-p">
         These are some projects made by Dustin Taylor using HTML, CSS,
