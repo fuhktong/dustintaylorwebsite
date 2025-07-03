@@ -13,12 +13,17 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - name: Deploy to server
-      uses: easingthemes/ssh-deploy@main
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-        REMOTE_USER: ${{ secrets.REMOTE_USER }}
-        SOURCE: "."
-        TARGET: ${{ secrets.REMOTE_PATH }}
-        EXCLUDE: "/node_modules/, /.git/, /.github/, /README.md"
+    - name: Deploy to server via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./
+        server-dir: ${{ secrets.FTP_PATH }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          .github/
+          README.md
