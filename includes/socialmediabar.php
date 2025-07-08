@@ -22,13 +22,6 @@
     <img src="assets/images/white logo youtube.png" alt="The Framers' Method on YouTube" />
   </a>
   <a
-    href="https://www.patreon.com/framersmethod"
-    target="_blank"
-    rel="noreferrer"
-  >
-    <img src="assets/images/white logo patreon.png" alt="The Framers' Method on Patreon" />
-  </a>
-  <a
     href="https://www.tiktok.com/@framersmethod"
     target="_blank"
     rel="noreferrer"

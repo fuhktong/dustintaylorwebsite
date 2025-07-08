@@ -12,24 +12,18 @@
         General Caucus.
       </p>
       <p class="framersmethod-text-p">
-        Developed a modern single-page application using React 18,
-        implementing a responsive and interactive user interface with
-        features such as dynamic routing, animated page transitions using
-        Framer Motion, and mobile-first design principles. The frontend
-        showcases proficiency in React Hooks, component architecture, and
-        CSS3 for creating responsive layouts, along with SEO optimization
-        through React Helmet for dynamic meta tag management and
-        comprehensive Open Graph integration.
+        Developed a full-stack web application demonstrating proficiency in PHP server-side development with custom routing
+        implementation, modular component architecture, and RESTful API design. Built a scalable email marketing platform with
+        comprehensive campaign management, subscriber analytics, bounce handling, and automated scheduling capabilities.
+        Implemented secure form processing with reCAPTCHA integration, input validation, and SQL injection prevention through
+        parameterized queries.
       </p>
       <p class="framersmethod-text-p">
-        Created a robust backend infrastructure using PHP and Express.js,
-        handling secure form submissions and email processing with
-        Nodemailer. Implemented comprehensive security measures including
-        input validation, data sanitization, and proper CORS handling, while
-        utilizing environmental variables for secure configuration
-        management. The backend architecture demonstrates expertise in
-        RESTful API development, server-side error handling, and secure data
-        processing.
+        Showcased expertise in modern development practices including environment-based configuration management, error handling
+        with comprehensive logging, and automated CI/CD pipeline deployment using GitHub Actions. Demonstrated strong database
+        design and management skills with MySQL, implementing normalized schemas for email campaigns, subscriber management, and
+        analytics tracking. Applied security best practices including data sanitization, CORS handling, and secure credential
+        management through environment variables.
       </p>
     </div>
 
